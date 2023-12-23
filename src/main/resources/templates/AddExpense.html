@@ -74,7 +74,7 @@
 
 <body style="overflow-y: hidden;">
     <nav class="navbar p-0 mb-0" style="border-bottom: 4px black double;">
-        <div class="container-fluid" style="background-color: plum; padding:1%">
+        <div class="container-fluid" style="background-color: plum; padding:-1%">
             <a class="navbar-brand" href="index.html">
                 <img src="media/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
                 <span class="fs-2 fw-bolder align-text-top"
@@ -84,7 +84,7 @@
             <a href="home" style="color: green;  position: absolute; right:42%; ">
                 <span class="text-xxl-end" style="font-size: 40px;"><i class=" fa-solid fa-house"></i></span>
             </a>
-            <div class="text-xxl-end" style="font-size: 40px; margin-right: 20px;" id="setting">
+            <div class="text-xxl-end" style="font-size: 40px; margin-right: 30px;" id="setting">
                 <i class="fa-solid fa-user-gear fa-flip" style="color:black;"></i>
                 <ul id="list">
                     <li><a href="#">Update Profile</a></li>
@@ -102,23 +102,23 @@
             </div>
 
             <form class="contact1-form validate-form" action="/expense/addExpense">
-                <span class="contact1-form-title" style="color:black;">
+                <span class="contact1-form-title" style="color:black;margin-top: -30px;">
                     Add Expenses
                 </span>
 
                 <div class="wrap-input1 validate-input" data-validate="Name is required">
-                    <input class="input1" type="text" name="amount" placeholder="Amount">
+                    <input class="input1" type="text" name="amount" placeholder="Amount" style="height: 40px;">
                     <span class="shadow-input1"></span>
                 </div>
 
                 <div class="wrap-input1 validate-input">
-                    <input class="input1" type="date" placeholder="Date" name="expenseDate">
+                    <input class="input1" type="date" placeholder="Date" name="expenseDate"style="height: 40px;">
                     <span class="shadow-input1"></span>
                 </div>
 
                 <div class="wrap-input1 validate-input" data-validate="Subject is required">
                     <input class="input1" type="text" placeholder="Category" list="sub"
-                    name="expenseCategory">
+                    name="expenseCategory"style="height: 40px;">
                     <span class="shadow-input1"></span>
                     <datalist id="sub">
                         <option>Utilities</option>
@@ -140,12 +140,12 @@
 
                 <div class="wrap-input1 validate-input" data-validate="Message is required">
                     <textarea class="input1" placeholder="Description"
-                    name="description"></textarea>
+                    name="description" style="height: 30px";></textarea>
                     <span class="shadow-input1"></span>
                 </div>
 
                 <div class="container-contact1-form-btn">
-                    <button class="contact1-form-btn">
+                    <button class="contact1-form-btn"style="height:40px">
                         <span>
                             ADD
                             <i class="fa fa-plus" aria-hidden="true"></i>
